@@ -1,0 +1,28 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Env / secrets
+.env
+.env.*
+*.key
+*.pem
+
+# Data (NO subir real)
+data/real/
+data/samples/*.xml
+outputs/
+*.xml
+*.csv
+*.parquet
+
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
