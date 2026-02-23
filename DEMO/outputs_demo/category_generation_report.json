@@ -1,0 +1,26 @@
+{
+  "count": 4,
+  "rows": [
+    {
+      "category_key": "INT.L4-S1219",
+      "latency_s": 3.035,
+      "chars": 505
+    },
+    {
+      "category_key": "INT.L4-S5687",
+      "latency_s": 2.64,
+      "chars": 522
+    },
+    {
+      "category_key": "INT.L4-S5947",
+      "latency_s": 2.231,
+      "chars": 576
+    },
+    {
+      "category_key": "INT.L4-S6014",
+      "latency_s": 2.063,
+      "chars": 464
+    }
+  ],
+  "attribute_id_for_delta": "TBD.CATEGORY.WebDescription"
+}

@@ -1,0 +1,21 @@
+{
+  "pph_files": [
+    "US-8847_TA-8849_PPHSampleData_STEPXML_export_v2_homemx-prod_2026-02-09_15.30.54.xml"
+  ],
+  "product_files": [
+    "US-8847_TA-8849_ProductSampleData_STEPXML_export_v2_homemx-prod_2026-02-09_15.35.48.xml"
+  ],
+  "hierarchy_nodes": 40,
+  "attribute_links": 327,
+  "hierarchy_levels": {
+    "PMDM.PRD.INT.Level4": 32,
+    "PMDM.PRD.INT.Level3": 7,
+    "PMDM.PRD.INT.Level2": 1
+  },
+  "products": 2779,
+  "products_without_parent": 0,
+  "products_unmatched_category": 0,
+  "avg_attributes_per_product": 103.45915797049298,
+  "warnings": [],
+  "skipped": []
+}

@@ -1,0 +1,28 @@
+{
+  "count": 4,
+  "total_s": 13.937,
+  "avg_s": 3.484,
+  "attribute_id_for_delta": "THD.PR.WebLongDescription",
+  "max_chars": 1200,
+  "model": "gpt-4.1-mini",
+  "forbidden_terms_count": 0,
+  "required_terms_count": 0,
+  "timings": [
+    {
+      "product_id": "GR-7065304",
+      "latency_s": 2.784
+    },
+    {
+      "product_id": "GR-7255196",
+      "latency_s": 3.347
+    },
+    {
+      "product_id": "GR-7349435",
+      "latency_s": 4.097
+    },
+    {
+      "product_id": "GR-7349551",
+      "latency_s": 3.705
+    }
+  ]
+}
