@@ -3,7 +3,8 @@ import streamlit as st
 from pathlib import Path
 
 from ui_theme import apply_goat_theme, load_logo
-from security import render_login
+from security import require_login, logout_button_sidebar
+
 # ==============================================================================
 # Config
 # ==============================================================================
@@ -28,16 +29,12 @@ section[data-testid="stSidebar"] div[data-testid="stSidebarNav"]{ display:none; 
 """,
     unsafe_allow_html=True,
 )
-# ============================================================
-# LOGIN GATE
-# ============================================================
 
-if "authenticated" not in st.session_state:
-    st.session_state.authenticated = False
+# ==============================================================================
+# LOGIN GATE (SIMPLE Y ESTABLE)
+# ==============================================================================
+require_login(app_title="GOAT AI INNOVATION LABS")
 
-if not st.session_state.authenticated:
-    render_login()
-    st.stop()
 # ==============================================================================
 # Router (pages)
 # ==============================================================================
@@ -72,7 +69,6 @@ with st.sidebar:
     )
     st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
 
-    # Navegación
     for name in PAGES.keys():
         is_active = (st.session_state.page == name)
         label = f"• {name}" if is_active else name
@@ -80,7 +76,7 @@ with st.sidebar:
         if clicked:
             go(name)
 
-    st.markdown("<div style='height:16px'></div>", unsafe_allow_html=True)
+    logout_button_sidebar()
 
 # ==============================================================================
 # Render page
