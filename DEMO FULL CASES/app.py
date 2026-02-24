@@ -3,7 +3,7 @@ import streamlit as st
 from pathlib import Path
 
 from ui_theme import apply_goat_theme, load_logo
-
+from security import render_login
 # ==============================================================================
 # Config
 # ==============================================================================
@@ -28,7 +28,16 @@ section[data-testid="stSidebar"] div[data-testid="stSidebarNav"]{ display:none; 
 """,
     unsafe_allow_html=True,
 )
+# ============================================================
+# LOGIN GATE
+# ============================================================
 
+if "authenticated" not in st.session_state:
+    st.session_state.authenticated = False
+
+if not st.session_state.authenticated:
+    render_login()
+    st.stop()
 # ==============================================================================
 # Router (pages)
 # ==============================================================================
